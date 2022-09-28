@@ -1,6 +1,6 @@
 import { useState } from "react";
 import  "./css/singleView.css";
-import "./main.js";
+// import "./main.js";
 
 export function App() {
 
