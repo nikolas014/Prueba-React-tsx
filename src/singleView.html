@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="./img/intento2.jpg" />
+    <title>Ana Pérez</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/path/to/dist/css/image-zoom.css" />
+</head>
+<style>
+    :root {
+        --openSans: 'Open Sans', sans-serif;
+        --letrasRusticas: 'Abril Fatface', cursive;
+        --roboto: 'Roboto', sans-serif;
+        --bluefooter: #005e90;
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --theme: #007aff;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    }
+    .altura {
+        height: 350px;
+    }
+    .footer {
+        height: 100px;
+        background-color: var(--bluefooter);
+    }
+    h6 {
+        font-family: var(--roboto);
+        font-weight: 100;
+        color: var(--light)
+    }
+    hr {
+        border-top: 1px dashed var(--dark);
+        height: 5px;
+    }
+    .img {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0.1),
+                rgba(255, 255, 255, 0.3)),
+            url("./img/fotomontaje1.jpg");
+        background-position: 20% 80%;
+        background-size: cover;
+    }
+    .img-carousel {
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .img-carousel-1 {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.3),
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 1)),
+            url("./img/fotomontaje1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img-carousel-2 {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.3),
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 1)),
+            url("./img/pruebas.png");
+    }
+
+    .img-carousel-3 {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.3),
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 1)),
+            url("./img/M6.E5.GIF_anA_PErez.gif");
+    }
+    .imgmodal{
+        background-image: url("./img/pruebas.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .m{
+        height: 550px;
+        width: 900px;
+        background-position: center;
+        background-size: cover;
+    }
+    .btn-light {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #FFF;
+    --bs-btn-border-color: #FFF;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #d3d4d5;
+    --bs-btn-hover-border-color: #c6c7c8;
+    --bs-btn-focus-shadow-rgb: 211,212,213;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #c6c7c8;
+    --bs-btn-active-border-color: #babbbc;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #f8f9fa;
+    --bs-btn-disabled-border-color: #f8f9fa;
+    height: 70px;
+    border-bottom: 0px solid #fff !important;
+    -webkit-border-radius: 10px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-radius: 10px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    border-radius: 10px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    }
+    .allradius{
+        border-radius: 10px !important;
+    }
+    .radius{
+        -webkit-border-radius: 10px;
+        -webkit-border-top-left-radius: 0;
+        -moz-border-radius: 10px;
+        -moz-border-radius-topleft: 0;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    .trasnlate{
+        transform: translateY(1px);
+    }
+    h1{
+        border-left: 3px solid #e5b300;
+        padding-left: 1em;
+        font-family: var(--roboto);
+        font-weight: 300;
+        color: var(--light);
+    }
+    .margin{
+        margin-left: 200px;
+    }
+</style>
+<body>
+    
+        
+    <!-- Vertically centered modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered margin">
+            <div class="modal-content imgmodal">
+                <div class="m" id="imageModal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+    <!-- <header class="container-fluid">
+      <h1>Encabezado</h1>
+    </header> -->
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nuestro equipo</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+
+       < -- Un formulario de búsqueda es una forma no-lineal de hacer búsquedas en un sitio web. -- >
+
+       <form>
+         <input type="search" name="q" placeholder="Buscar">
+         <input type="submit" value="¡Vamos!">
+       </form>
+     </nav> -->
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <!-- imagen encabezado -->
+    <div class="container-fluid mt-5 mb-5 p-5 img altura">
+        <div class="container">
+            <h1 class="ms-xl-5">Primer Semestre</h1>
+        </div>
+    </div>
+    
+    <!-- descripcion, aside y galería -->
+    <main class="container">
+        <div class="row me-xl-5 ms-xl-5">
+
+            <!-- Artículo (Descripción) -->
+            <article class="col-12 col-xl-8">
+                <h2 class="mb-3">Descripción</h2>
+                <p>
+                    <strong>Primer año</strong><br>
+                    Semetre 2020
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <strong>Equipo docente</strong><br>
+                    Raul Solis F., Arquitecto y Magister PUCV<br>
+                    Michele Berhó M., Arquitecta UTFSM y Magister U. Ferrara<br>
+                    Eduardo Hernández, Arquitecto UTFSM<br>
+                    Constanza Espinoza, Arquitecta y Magister UTFSM<br>
+
+                </p>
+                <p>&nbsp;</p>
+                <button id="btn1" type="button" class="btn btn-light border trasnlate">Proyecto 1</button>
+                <button id="btn2" type="button" class="btn btn-light">Proyecto 2</button>
+                <button id="btn3" type="button" class="btn btn-light">Proyecto 3</button>
+                <div class="color p-3 border radius" id="parrafos">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ad magni soluta error, quia, ut modi
+                    voluptatum accusantium impedit, mollitia et? Explicabo voluptatibus aspernatur aut harum ducimus
+                    rerum illum ut. Rem deserunt quod mollitia dignissimos? Dicta in voluptatem quasi maxime autem
+                    molestias odit, eos nulla omnis officiis error officia soluta!</p>
+                <p>&nbsp;</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quas velit, voluptates fuga
+                    quia saepe repellendus modi animi, temporibus ratione non molestiae expedita. Necessitatibus quos
+                    magnam expedita obcaecati aspernatur repellendus excepturi cumque quia, delectus culpa velit, animi
+                    porro unde eaque.</p>    
+                </div>
+            </article>
+
+            <!-- el contenido mano derecha contenido principal -->
+            <aside class="col-12 col-xl-4">
+            </aside>
+
+            <!-- Salto de linea -->
+            <hr class="my-5" />
+
+            <!-- Galeria de fotos -->
+            <h2>Galería</h2>
+            <article class="col-12 mt-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active" data-bs-interval="9000">
+                            <div class="img-carousel img-carousel-1" id="1"></div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="9000">
+                            <div class="img-carousel img-carousel-2" id="2"></div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="9000">
+                            <div class="img-carousel img-carousel-3" id="3"></div>
+                        </div>
+                    </div>    
+                    
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 footer d-flex flex-column align-items-center justify-content-center p-3">
+                <h6>Anita Pérez H.</h6>
+                <h6>Todos los derechos reservados &copy;</h6>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" id="abrirModal" data-bs-toggle="modal" data-bs-target="#exampleModal" hidden></button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

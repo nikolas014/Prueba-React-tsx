@@ -1,0 +1,155 @@
+:root {
+    --openSans: 'Open Sans', sans-serif;
+    --letrasRusticas: 'Abril Fatface', cursive;
+    --roboto: 'Roboto', sans-serif;
+    --bluefooter: #005e90;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --theme: #007aff;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
+.altura {
+    height: 350px;
+}
+.footer {
+    height: 100px;
+    background-color: var(--bluefooter);
+}
+h6 {
+    font-family: var(--roboto);
+    font-weight: 100;
+    color: var(--light)
+}
+hr {
+    border-top: 1px dashed var(--dark);
+    height: 5px;
+}
+.img {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.1),
+            rgba(255, 255, 255, 0.3)),
+        url("../img/fotomontaje1.jpg");
+    background-position: 20% 80%;
+    background-size: cover;
+}
+.img-carousel {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img-carousel-1 {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.3),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 1)),
+        url("../img/fotomontaje1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img-carousel-2 {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.3),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 1)),
+        url("../img/pruebas.png");
+}
+
+.img-carousel-3 {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.3),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 1)),
+        url("../img/M6.E5.GIF_anA_PErez.gif");
+}
+.imgmodal{
+    background-image: url("../img/pruebas.png");
+    background-position: center;
+    background-size: cover;
+}
+.m{
+    height: 550px;
+    width: 900px;
+    background-position: center;
+    background-size: cover;
+}
+.btn-light {
+--bs-btn-color: #000;
+--bs-btn-bg: #FFF;
+--bs-btn-border-color: #FFF;
+--bs-btn-hover-color: #000;
+--bs-btn-hover-bg: #d3d4d5;
+--bs-btn-hover-border-color: #c6c7c8;
+--bs-btn-focus-shadow-rgb: 211,212,213;
+--bs-btn-active-color: #000;
+--bs-btn-active-bg: #c6c7c8;
+--bs-btn-active-border-color: #babbbc;
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+--bs-btn-disabled-color: #000;
+--bs-btn-disabled-bg: #f8f9fa;
+--bs-btn-disabled-border-color: #f8f9fa;
+height: 70px;
+border-bottom: 0px solid #fff !important;
+-webkit-border-radius: 10px !important;
+-webkit-border-bottom-right-radius: 0px !important;
+-webkit-border-bottom-left-radius: 0px !important;
+-moz-border-radius: 10px !important;
+-moz-border-radius-bottomright: 0px !important;
+-moz-border-radius-bottomleft: 0px !important;
+border-radius: 10px !important;
+border-bottom-right-radius: 0px !important;
+border-bottom-left-radius: 0px !important;
+}
+.allradius{
+    border-radius: 10px !important;
+}
+.radius{
+    -webkit-border-radius: 10px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 10px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+}
+.trasnlate{
+    transform: translateY(1px);
+}
+h1{
+    border-left: 3px solid #e5b300;
+    padding-left: 1em;
+    font-family: var(--roboto);
+    font-weight: 300;
+    color: var(--light);
+}
+.margin{
+    margin-left: 200px;
+}
